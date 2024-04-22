@@ -1,5 +1,4 @@
-i=0
-for i, i<3, i++ :
+for _ in range(3) :
     print("hello")
 
 
