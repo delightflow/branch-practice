@@ -1,11 +1,11 @@
-i=0
+i=1
 for i in range(16):
-    if i%3==0:
-        print("fizz")
-    if i%5==0:
-        print("buzz")
-    if i%15==0:
-        print("fizzbuzz")
-    else:
+    if i%3!=0 and i%5!=0:
         print(i)
+    elif i%5==0 and i%3!=0:
+        print("buzz")
+    elif i%3==0 and i%5!=0:
+        print("fizz")
+    else:
+        print("fizzbuzz")
 
